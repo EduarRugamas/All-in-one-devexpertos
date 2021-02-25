@@ -1,11 +1,12 @@
-package com.devexpertos.allinone
+package com.devexpertos.allinone.Votos
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.devexpertos.allinone.R
 
-class MainActivity : AppCompatActivity() {
+class Ejercicio_2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_ejercicio_2)
     }
 }

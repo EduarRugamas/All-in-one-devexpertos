@@ -28,12 +28,6 @@ class MainActivity : AppCompatActivity() {
             val salario = Intent(this, Ejercicio_3::class.java)
             startActivity(salario)
         }
-
-
-
-
-
-
-
+        
     }
 }

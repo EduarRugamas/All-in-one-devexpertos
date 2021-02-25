@@ -3,4 +3,11 @@
     <string name="ecuacion">Calculo de Ecuacion Cuadratica</string>
     <string name="votos">Votacion</string>
     <string name="salario">Calculo de Salario</string>
+
+    <string name="valorA">Valor de a</string>
+    <string name="valorB">Valor de b</string>
+    <string name="valorC">Valor de c</string>
+    <string name="Btn_calcular">Calcular Ecuacion</string>
+
+
 </resources>

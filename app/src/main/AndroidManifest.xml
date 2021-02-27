@@ -11,8 +11,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Salarios.Ejercicio_3"></activity>
         <activity android:name=".Votos.Ejercicio_2" />
-        <activity android:name=".Votos.Votos" />
-        <activity android:name=".Salarios.Votos" />
         <activity android:name=".Ecuacion_Cuadratica.Ejercicio_1" />
         <activity android:name=".Home.MainActivity">
             <intent-filter>

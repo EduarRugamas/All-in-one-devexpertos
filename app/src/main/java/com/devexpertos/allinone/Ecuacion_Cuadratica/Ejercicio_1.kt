@@ -32,9 +32,6 @@ class Ejercicio_1 : AppCompatActivity() {
                 }
             }
 
-
-
-
     }
 
     @SuppressLint("SetTextI18n")

@@ -2,6 +2,7 @@ package com.devexpertos.allinone.Salarios
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
 import android.view.View
 import android.widget.*
 import com.devexpertos.allinone.R
@@ -16,34 +17,40 @@ class Ejercicio_3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ejercicio_3)
 
-        //calcSueldo.setOnClickListener {
-        // Toast.makeText(this, "Los campos estan vacios", Toast.LENGTH_SHORT).show()
-        //}
+        val nomb = nombre.text
+        val apel = apellidos.text
+        val sal = salarioBase.text
 
-        option = findViewById(R.id.spinnerMenu) as Spinner
-        cargo = findViewById(R.id.cargo) as TextView
+        calcSueldo.setOnClickListener {
+            /*if (nomb.isEmpty()) || apel.isEmpty() || sal.isEmpty()*/
+            Toast.makeText(this, "Los campos estan vacios", Toast.LENGTH_SHORT).show()
 
-        val options = arrayOf("Gerente", "Asistente", "Secretaria")
+            option = findViewById(R.id.spinnerMenu) as Spinner
+            cargo = findViewById(R.id.cargo) as TextView
 
-        option.adapter = ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,options)
+            val options = arrayOf("Gerente", "Asistente", "Secretaria")
 
-        option.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
-            override fun onItemSelected(
-                parent: AdapterView<*>?,
-                view: View?,
-                position: Int,
-                id: Long
-            ) {
-                cargo.text = options[position]
+            option.adapter =
+                ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, options)
 
-            }
+            option.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+                override fun onItemSelected(
+                    parent: AdapterView<*>?,
+                    view: View?,
+                    position: Int,
+                    id: Long
+                ) {
+                    cargo.text = options[position]
 
-            override fun onNothingSelected(parent: AdapterView<*>?) {
-                cargo.text = "Seleccione una opcion"
+                }
+
+                override fun onNothingSelected(parent: AdapterView<*>?) {
+                    cargo.text = "Seleccione una opcion"
+                }
+
             }
 
         }
 
     }
 }
-

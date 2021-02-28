@@ -11,7 +11,7 @@ class Ejercicio_2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ejercicio_2)
 
-        val cantidad=findViewById<View>(R.id.buket) as EditText
+
 
     }
 }

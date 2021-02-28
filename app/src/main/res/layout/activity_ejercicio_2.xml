@@ -37,17 +37,17 @@
 
     <EditText
         android:id="@+id/buket"
-        android:layout_width="194dp"
-        android:layout_height="334dp"
+        android:layout_width="188dp"
+        android:layout_height="210dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.375" />
+        app:layout_constraintVertical_bias="0.285" />
 
     <TextView
         android:id="@+id/vt1"

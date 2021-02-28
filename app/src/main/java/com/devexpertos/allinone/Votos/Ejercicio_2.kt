@@ -1,25 +1,32 @@
 package com.devexpertos.allinone.Votos
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.EditText
-import android.widget.Toast
 import com.devexpertos.allinone.R
-import kotlinx.android.synthetic.main.activity_ejercicio_2.*
 
 class Ejercicio_2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ejercicio_2)
 
-        val bucket = buket.text
 
-        btnAgregar.setOnClickListener {
-            if (bucket.isEmpty())
-            Toast.makeText(this, "Los campos no deben estar vacios", Toast.LENGTH_SHORT).show()
 
-        }
+        val votos = intArrayOf()
+
+
+        val votos_1 = votos.filter { candidato -> candidato == 1 }
+        val votos_2 = votos.filter { candidato -> candidato == 2 }
+        Log.d("votos","cantidad de votos $votos_1")
+        Log.d("votos","cantidad de votos $votos_2")
+        val votos_total_1 = votos_1.size
+        val votos_total_2 = votos_2.size
+
+        Log.d("votos","cantidad de votos $votos_total_1")
+        Log.d("votos","cantidad de votos $votos_total_2")
+
+
     }
 }

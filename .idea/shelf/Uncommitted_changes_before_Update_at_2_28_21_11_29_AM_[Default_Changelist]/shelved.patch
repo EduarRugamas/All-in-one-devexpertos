@@ -1,0 +1,36 @@
+Index: app/src/main/java/com/devexpertos/allinone/Votos/Ejercicio_2.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.devexpertos.allinone.Votos\n\nimport androidx.appcompat.app.AppCompatActivity\nimport android.os.Bundle\nimport android.view.View\nimport android.widget.EditText\nimport com.devexpertos.allinone.R\n\nclass Ejercicio_2 : AppCompatActivity() {\n    override fun onCreate(savedInstanceState: Bundle?) {\n        super.onCreate(savedInstanceState)\n        setContentView(R.layout.activity_ejercicio_2)\n\n\n\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/devexpertos/allinone/Votos/Ejercicio_2.kt	(revision a8489df2665b2d1540226fc8efaadf4920a4606d)
++++ app/src/main/java/com/devexpertos/allinone/Votos/Ejercicio_2.kt	(date 1614486783000)
+@@ -2,6 +2,7 @@
+ 
+ import androidx.appcompat.app.AppCompatActivity
+ import android.os.Bundle
++import android.util.Log
+ import android.view.View
+ import android.widget.EditText
+ import com.devexpertos.allinone.R
+@@ -11,7 +12,17 @@
+         super.onCreate(savedInstanceState)
+         setContentView(R.layout.activity_ejercicio_2)
+ 
++        val votos = intArrayOf(1,2,3,4,2,1,3,1,2,3,4,4,4,1,2,1)
+ 
+ 
++        val votos_1 = votos.filter { candidato -> candidato == 1 }
++        val votos_2 = votos.filter { candidato -> candidato == 2 }
++        Log.d("votos","cantidad de votos $votos_1")
++        Log.d("votos","cantidad de votos $votos_2")
++        val votos_total_1 = votos_1.size
++        val votos_total_2 = votos_2.size
++
++        Log.d("votos","cantidad de votos $votos_total_1")
++        Log.d("votos","cantidad de votos $votos_total_2")
+     }
+ }
+\ No newline at end of file

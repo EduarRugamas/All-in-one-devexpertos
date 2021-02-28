@@ -8,6 +8,9 @@
     <string name="valorB">Valor de b</string>
     <string name="valorC">Valor de c</string>
     <string name="Btn_calcular">Calcular Ecuacion</string>
+    <string name="votaciones">Votaciones</string>
+    <string name="ingrese_lo_votos">Ingrese lo votos</string>
+    <string name="agregar">Enviar votos</string>
 
 
 </resources>

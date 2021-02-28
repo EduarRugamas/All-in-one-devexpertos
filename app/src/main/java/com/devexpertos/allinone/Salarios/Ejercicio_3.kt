@@ -34,7 +34,7 @@ class Ejercicio_3 : AppCompatActivity() {
                 position: Int,
                 id: Long
             ) {
-                cargo.text = options.get(position)
+                cargo.text = options[position]
 
             }
 

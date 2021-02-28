@@ -17,11 +17,19 @@ class Ejercicio_3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ejercicio_3)
 
-        val nomb = nombre.text
-        val apel = apellidos.text
-        val sal = salarioBase.text
+        val nomb = findViewById<EditText>(R.id.nombre)
+        val apel = findViewById<EditText>(R.id.apellidos)
+        val sal = findViewById<EditText>(R.id.salarioBase)
+        val hrs = findViewById<EditText>(R.id.hrs)
+        var afp = 0.075
+        var isss = 0.03
+        var renta = 0.10
 
-            option = findViewById(R.id.spinnerMenu) as Spinner
+
+
+
+
+            /*option = findViewById(R.id.spinnerMenu) as Spinner
             cargo = findViewById(R.id.cargo) as TextView
 
             val options = arrayOf("Gerente", "Asistente", "Secretaria")
@@ -36,14 +44,13 @@ class Ejercicio_3 : AppCompatActivity() {
                     id: Long
                 ) {
                     cargo.text = options[position]
-
                 }
-
                 override fun onNothingSelected(parent: AdapterView<*>?) {
                     cargo.text = "Seleccione una opcion"
                 }
 
-        }
+        }*/
 
     }
+
 }

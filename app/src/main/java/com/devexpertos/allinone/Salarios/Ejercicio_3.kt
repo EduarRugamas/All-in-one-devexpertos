@@ -21,17 +21,12 @@ class Ejercicio_3 : AppCompatActivity() {
         val apel = apellidos.text
         val sal = salarioBase.text
 
-        calcSueldo.setOnClickListener {
-            /*if (nomb.isEmpty()) || apel.isEmpty() || sal.isEmpty()*/
-            Toast.makeText(this, "Los campos estan vacios", Toast.LENGTH_SHORT).show()
-
             option = findViewById(R.id.spinnerMenu) as Spinner
             cargo = findViewById(R.id.cargo) as TextView
 
             val options = arrayOf("Gerente", "Asistente", "Secretaria")
 
-            option.adapter =
-                ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, options)
+            option.adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, options)
 
             option.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
                 override fun onItemSelected(
@@ -47,8 +42,6 @@ class Ejercicio_3 : AppCompatActivity() {
                 override fun onNothingSelected(parent: AdapterView<*>?) {
                     cargo.text = "Seleccione una opcion"
                 }
-
-            }
 
         }
 

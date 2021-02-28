@@ -8,7 +8,7 @@
     tools:context=".Salarios.Ejercicio_3">
 
     <TextView
-        android:id="@+id/calsalari"
+        android:id="@+id/calsalario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calcular Salario"
@@ -23,7 +23,6 @@
         android:layout_width="wrap_content"
         android:layout_height="45dp"
         android:hint="Nombres"
-        android:inputType="number"
         android:textAlignment="center"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
@@ -35,7 +34,6 @@
         android:layout_width="wrap_content"
         android:layout_height="45dp"
         android:hint="Apellidos"
-        android:inputType="number"
         android:textAlignment="center"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
@@ -47,7 +45,6 @@
         android:layout_width="wrap_content"
         android:layout_height="45dp"
         android:hint="Cargo de empleado"
-        android:inputType="number"
         android:textAlignment="center"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
